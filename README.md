@@ -1,3 +1,15 @@
+##Rabbit Client Example
+
+This is Micronaut web application used to test @RabbitClient thread safety.
+
+To start application, RabbitMQ must be available.
+
+To run RabbitMQ inside Docker container, use this command:
+
+    docker run -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3.10-management
+
+
+
 ## Micronaut 3.5.1 Documentation
 
 - [User Guide](https://docs.micronaut.io/3.5.1/guide/index.html)
