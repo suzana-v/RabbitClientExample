@@ -15,10 +15,6 @@ class TestController(
 
     @Get("/test")
     fun test() {
-        // resetting counters
-        MessageListener.retryCount = 0
-        MessageListener.incorrectHeaders = 0
-
         for (i in 0..5) {
             thread(start = true) {
                 latch.await()
